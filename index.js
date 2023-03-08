@@ -10,15 +10,15 @@ app.get('/', (req, res) => {
 })
 
 app.get('/hobbies', (req, res) => {
-    res.send('<h1>Hobbies</h1><p>My hobbies are cooking and coding</p><p><a href="/">Home</a></p>')
+    res.sendFile(__dirname + '/hobbies.html')
 })
 
 app.get('/contact', (req, res) => {
-    res.send('<h1>Contact</h1><p>Contact me at arlandshane@gmail.com</p><p><a href="/">Home</a></p>')
+    res.sendFile(__dirname + '/contact.html')
 })
 
 app.get('/about', (req, res) => {
-    res.send('<h1>About</h1><p>My name is Shane Arland and I am a Web Developer</p><p><a href="/">Home</a></p>')
+    res.sendFile(__dirname + '/about.html')
 })
 
 app.listen(port, (req, res) => {
