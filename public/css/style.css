@@ -1,7 +1,21 @@
 body {
     background-color: bisque;
+    overflow: hidden;
 }
 
 h1 {
-    font-family: cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: blue;
+}
+
+img {
+    width: 40rem;
 }

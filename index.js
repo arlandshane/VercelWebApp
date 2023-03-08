@@ -10,15 +10,15 @@ app.get('/', (req, res) => {
 })
 
 app.get('/hobbies', (req, res) => {
-    res.send('<h1>Hobbies</h1><p>My hobbies are cooking and coding</p>')
+    res.send('<h1>Hobbies</h1><p>My hobbies are cooking and coding</p><p><a href="/">Home</a></p>')
 })
 
 app.get('/contact', (req, res) => {
-    res.send('<h1>Contact</h1><p>Contact me at arlandshane@gmail.com</p>')
+    res.send('<h1>Contact</h1><p>Contact me at arlandshane@gmail.com</p><p><a href="/">Home</a></p>')
 })
 
 app.get('/about', (req, res) => {
-    res.send('<h1>About</h1><p>My name is Shane Arland and I am a Web Developer</p>')
+    res.send('<h1>About</h1><p>My name is Shane Arland and I am a Web Developer</p><p><a href="/">Home</a></p>')
 })
 
 app.listen(port, (req, res) => {
